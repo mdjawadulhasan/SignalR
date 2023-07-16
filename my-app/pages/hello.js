@@ -57,6 +57,20 @@ export default function Map() {
       })
       .build();
 
+
+//To connect with wss
+    /*    
+    const connection = new signalR.HubConnectionBuilder()
+      .withUrl(`wss://localhost:44318/locations`, {
+        skipNegotiation: true,
+        transport: signalR.HttpTransportType.WebSockets,
+        accessTokenFactory: () => {
+          return "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA2YzU2NGI5LTNhNWItNDZiNC0zMzMzLTA4ZGI4MTMzMTQwOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Ik1TRkFBZG1pbkB5b3BtYWlsLmNvbSIsInVzZXJOYW1lIjoiTVNGQUFkbWluIiwiZnVsbE5hbWUiOiJBZG1pbiBBZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJBZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL3N1cm5hbWUiOiJBZG1pbiIsImlwQWRkcmVzcyI6IjAuMC4wLjEiLCJpbWFnZV91cmwiOiIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IiIsImlzSGlnaGVyTGV2ZWxNYW5hZ2VyIjoiVHJ1ZSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNjg5NDk5MTM3fQ.ZZNEmBZdrhD9QWXerhs2pgbrk6aYOZkG1q0rE1fQqWM";
+        }
+      })
+      .build();    
+    */
+
     connection.start()
       .then(() => {
         console.log("SignalR connection established.");
